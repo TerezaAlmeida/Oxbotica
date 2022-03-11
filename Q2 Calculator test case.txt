@@ -1,0 +1,31 @@
+1st Scenario - Validate if the operations are working correctly 
+GIVEN user is at the Basic Calculator
+AND it inputs the first number
+AND the second number
+WHEN the user selects the add operation
+AND clicks to calculate
+THEN the user has the correct answer
+
+Test Result: 
+ADD operation: Failed - the add operation concatenates the two numbers instead of sum them up.
+Subtract operation: Success
+Multiply operation: Success
+Divide operation: Success
+Concatenate operation: Failed - the concatenate sum the numbers up instead of concatenate them.
+
+2nd Scenario - Validate that the anwers is cleaned
+GIVEN the user did an operation
+WHEN the user clicks to clear 
+THEN the answer field is cleaned
+
+Test Result: Success - the answer fiels has been cleaned for each operation
+
+3rd Scenario - Validate the integers only checkbox
+GIVEN the user selects to only use integers
+AND input a decimal number as the first number 
+AND an integer as the second number
+WHEN the user clicks to calculate
+THEN the answer is an integer number 
+
+Test Result - Success - when that checkbox is selected it just shows the result as integers
+
